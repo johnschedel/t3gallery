@@ -19,7 +19,7 @@ import {
 export const createTable = pgTableCreator((name) => `t3gallery_${name}`);
 
 export const images = createTable(
-  "post",
+  "image",
   {
     id: serial("id").primaryKey(),
     name: varchar("name", { length: 256 }).notNull(),
